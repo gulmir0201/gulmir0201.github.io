@@ -8,10 +8,10 @@
     justify-content: center;
     border-radius: 20px;
 }
-.img{
+img{
     align-items: center;
 }
-.p{
+p{
     font-size: medium;
     color: blue;
     font-family: Georgia, 'Times New Roman', Times, serif;
