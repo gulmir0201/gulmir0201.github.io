@@ -65,3 +65,4 @@ function filterByGenre(genre) {
             console.log(error);
         });
 }
+
