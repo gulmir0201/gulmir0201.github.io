@@ -54,7 +54,7 @@ document.querySelectorAll(".btn").forEach(button => {
 });
 
 function filterByGenre(genre) {
-    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey[80, 27, 53]}&with_genres=${genre}`;
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genre}`;
     
     axios(url)
         .then(response => {
