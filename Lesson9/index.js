@@ -171,36 +171,99 @@
 // });
 
 
-function greet(name, owner) {
-    if (name === owner) {
-        return 'Hello boss';
-    } else {
-        return 'Hello guest';
+// function greet(name, owner) {
+//     if (name === owner) {
+//         return 'Hello boss';
+//     } else {
+//         return 'Hello guest';
+//     }
+// }
+
+// console.log(greet('Tomy', 'Tomy')); 
+// console.log(greet('Tomy', 'Jerry'));   
+
+
+// //Task2
+
+// function getQvartal(month) {
+//     if (month >=1 && month <=3) {
+//         return 'First quarter';
+//     }else if (month >=4 && month <= 6){
+//             return'second quarter';
+//         }else if (month >=7 && month <= 9){
+//             return'third quarter';
+//     }else if (month >=10 && month <= 12){
+//         return'fourth quarter';
+// } else{
+//     return "error month";
+// }
+// }
+// console.log(getQvartal(2));
+// console.log(getQvartal(6));
+// console.log(getQvartal(11));
+
+
+
+// const url = "https://solar-poised-salad.glitch.me/products";
+// async function newProduct() {
+    
+//     try {
+//         const response = await fetch(url)
+//         const data = await response.json()
+//         console.log(data);
+        
+//     } catch (error) {
+//       console.log(error);
+        
+//     }
+// }
+
+// newProduct();
+
+
+
+const url = "https://solar-poised-salad.glitch.me/products";
+async function newUrl(params) {
+    try {
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log(data);
+        
+    } catch (error) {
+        
     }
 }
-
-console.log(greet('Tomy', 'Tomy')); 
-console.log(greet('Tomy', 'Jerry'));   
+newUrl();
 
 
-//Task2
+// function accum(s) {
+//     return s
+//         .split('')                  // Split the string into an array of characters
+//         .map((char, index) => 
+//             char.toUpperCase() +    // Capitalize the first character
+//             char.toLowerCase().repeat(index)  // Repeat the character in lowercase `index` times
+//         )
+//         .join('-');                 // Join the resulting array with hyphens
+// }
 
-function getQvartal(month) {
-    if (month >=1 && month <=3) {
-        return 'First quarter';
-    }else if (month >=4 && month <= 6){
-            return'second quarter';
-        }else if (month >=7 && month <= 9){
-            return'third quarter';
-    }else if (month >=10 && month <= 12){
-        return'fourth quarter';
-} else{
-    return "error month";
-}
-}
-console.log(getQvartal(2));
-console.log(getQvartal(6));
-console.log(getQvartal(11));
+// // Examples:
+// console.log(accum("abcd"));    // "A-Bb-Ccc-Dddd"
+// console.log(accum("RqaEzty")); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// console.log(accum("cwAt")); 
+
+
+
+// function accum(s){
+// return s
+// .split ('')
+// .map ((char,index) =>
+// char.toUpperCase()+
+// char.toLowerCase().repeat.(index)
+// )
+// .join('-')
+// }
+//     console.log(accum("dddddffff"));
+    
 
 
 
